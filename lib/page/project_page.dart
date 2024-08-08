@@ -8,7 +8,7 @@ class ProjectPage extends StatelessWidget {
     return const Scaffold(
       backgroundColor: Colors.amber,
       body: Center(
-        child: Text('ProjectPage'),
+        child: Text('Project Page', style: TextStyle(color: Colors.white),),
       ),
     );
   }

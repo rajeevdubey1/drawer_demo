@@ -24,9 +24,9 @@ class _HomePageState extends State<HomePage> {
   ];
 
   final List<Widget> titleOption = const [
-    Text('DashBoard'),
-    Text('Service'),
-    Text('Project'),
+    Text('Dashboard'),
+    Text('Services'),
+    Text('Projects'),
   ];
 
   @override

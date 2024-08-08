@@ -1,16 +1,20 @@
 # drawer_demo
 
-A new Flutter project.
+This sample app will show the flow of flutter navigation drawer. 
 
-## Getting Started
+# Project features
 
-This project is a starting point for a Flutter application.
+- User can navigate to multiple screens.
+- User can show the current selected index on navigationbar title.
+- User can share the transitions using Provider state management solution.
 
-A few resources to get you started if this is your first Flutter project:
+## Technologies Used
+- Flutter
+- provider: ^6.1.2
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Installation
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- Clone the repository: git clone https://github.com/rajeevdubey1/drawer_demo
+- Navigate to the project directory: cd todo_app
+- Install the required packages: flutter pub get
+- Run the app on a connected device or emulator: flutter run

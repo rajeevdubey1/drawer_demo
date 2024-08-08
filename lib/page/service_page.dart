@@ -8,7 +8,7 @@ class ServicePage extends StatelessWidget {
     return const Scaffold(
       backgroundColor: Colors.blue,
       body: Center(
-        child: Text('ServicePage'),
+        child: Text('Service Page', style: TextStyle(color: Colors.white),),
       ),
     );
   }

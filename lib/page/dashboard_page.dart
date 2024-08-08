@@ -8,7 +8,7 @@ class DashBoardPage extends StatelessWidget {
     return const Scaffold(
       backgroundColor: Colors.green,
       body: Center(
-        child: Text('DashBoardPage'),
+        child: Text('Dashboard Page', style: TextStyle(color: Colors.white)),
       ),
     );
   }

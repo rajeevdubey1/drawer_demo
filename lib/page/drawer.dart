@@ -15,18 +15,32 @@ class DrawerNavagation extends StatelessWidget {
         children: [
           //DrawerHeader
           DrawerHeader(
-              child: Container(
-            width: 60,
-            height: 60,
-            decoration: const BoxDecoration(
-                shape: BoxShape.circle,
-                color: Colors.amber,
-                image:
-                    DecorationImage(image: AssetImage('assets/profile.jpg'))),
-          )),
+            padding: const EdgeInsets.all(0),
+                  decoration:
+                      BoxDecoration(color: Theme.of(context).canvasColor),
+                  child: UserAccountsDrawerHeader(
+                    margin: const EdgeInsets.all(0),
+                    decoration:
+                        BoxDecoration(color: Theme.of(context).canvasColor),
+                    accountName: Text(
+                      "Rajeev Dubey",
+                      style: Theme.of(context)
+                          .textTheme
+                          .titleLarge
+                          ?.copyWith(fontWeight: FontWeight.bold),
+                    ),
+                    accountEmail: Text(
+                      "Sr. Flutter Developer",
+                      style: Theme.of(context).textTheme.bodyLarge,
+                    ),
+                    currentAccountPicture: const CircleAvatar(
+                      backgroundImage: AssetImage("assets/profile.jpg"),
+                    ),
+                  ),
+          ),
           //DrawerItem
           DrawerItem(
-            title: 'DashBoard',
+            title: 'Dashboard',
             onTap: () {
               context.read<DrawerProvider>().onChangedIndex(0);
               Navigator.of(context).pop();
@@ -35,7 +49,7 @@ class DrawerNavagation extends StatelessWidget {
             selectedIndex: drawer.selectedIndex,
           ),
           DrawerItem(
-            title: 'Service',
+            title: 'Services',
             onTap: () {
               context.read<DrawerProvider>().onChangedIndex(1);
               Navigator.of(context).pop();
@@ -44,7 +58,7 @@ class DrawerNavagation extends StatelessWidget {
             selectedIndex: drawer.selectedIndex,
           ),
           DrawerItem(
-            title: 'Project',
+            title: 'Projects',
             onTap: () {
               context.read<DrawerProvider>().onChangedIndex(2);
               Navigator.of(context).pop();
